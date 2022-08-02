@@ -1,0 +1,21 @@
+{
+    "name": "Weather App",
+    "short_name": "Voice weather app",
+    "start_url": ".",
+    "background_color": "#f8ea29",
+    "theme_color": "#f8ea29",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "img/weather-small.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "img/weather-big.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
+}

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  --title-color: #333;
+  --light-title-color: #444;
+  --body-color: #f8ea29;
+  --background-color: #f8ea29;
+  --icon-color: #555;
+  --icon-border: none;
+  --foreground-color: #fff;
+  --blend-mode: normal; 
+}
+
+.dark-theme {
+  --title-color: #fff;
+  --light-title-color: #adadad;
+  --body-color: #afafaf;
+  --background-color: #181621;
+  --icon-color: #afafaf;
+  --icon-border: #fff;
+  --foreground-color: #211f2a;
+  --blend-mode: lighten; 
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  color: var(--body-color);
+  transition: background-color .2s, color .5s;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+
+.toggle-btn {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  border: 2px solid var(--title-color);
+  display: flex;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.toggle-btn i {
+  margin: auto;
+  font-size: small;
+  color: var(--title-color);
+}
+
+.input {
+  margin-top: 5vh;
+  width: 70vw;
+  text-align: center;
+}
+
+.input span {
+  display: inline-flex;
+}
+
+.input-header {
+  font-size: 25px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+
+.input span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 5px;
+  height: 30px;
+  width: 200px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid var(--light-title-color);
+  color: var(--light-title-color);
+  border-radius: 2px;
+  outline: none;
+  font-size: 20px;
+  /* margin-bottom: 5px; */
+}
+
+input:focus {
+  color: var(--light-title-color);
+}
+
+#button, #talk {
+  margin-left: 5px;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#button, #talk i {
+  margin: auto 10px 0 1px;
+  color: var(--icon-color);
+  font-size: 20px;
+}
+
+#talk i {
+  margin: 0;
+}
+
+.display {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  border: 2px solid var(--light-title-color);
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.display h1, h3, h4 {
+  color: var(--title-color);
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+

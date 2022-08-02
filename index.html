@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e86f1b05c7.js"></script>
+  <meta name="theme-color" content="#f8ea29">
+  <link rel="stylesheet" href="./src/styles.css">
+  <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="./img/weather-big.png">
+  <title>Dark Mode Theme</title>
+</head>
+<body>
+  
+  <section>
+    <div class="toggle-btn">
+      <i class="fas fa-adjust"></i>
+    </div>
+
+
+
+    <div class="input">
+      <h3 class="input-header">What's the weather</h3>
+      <span>
+        <input type="text" id="inputValue" placeholder="Enter city">
+
+      <button id="button"><i class="fas fa-search"></i></button>
+
+      <button id="talk"><i class="fas fa-microphone"></i></button>
+      </span>
+    </div>
+
+    <div class="display">
+      <h1 id="name"></h1>
+      <h3 id="temp"></h3>
+      <h4 id="desc"></h4>
+    </div>
+  </section>
+
+  <script src="./src/main.js"></script>
+</body>
+</html>
+
