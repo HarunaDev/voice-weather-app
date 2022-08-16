@@ -1,3 +1,5 @@
+import key from "./variable.js"
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js").then(registration => {
       console.log("SW Registered!")
@@ -47,7 +49,7 @@ recognition.onresult = (event) => {
 
   const transcript = event.results[current][0].transcript
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${transcript}&units=metric&appid=91322aa02f2d37851a9fbf95c3d66958`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${transcript}&units=metric&appid=${key}`)
   .then(response  => response.json())
   .then(data => {
       console.log(data);
@@ -81,7 +83,7 @@ talk.addEventListener("click", () => {
 
 button.addEventListener("click", () => {
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&units=metric&appid=91322aa02f2d37851a9fbf95c3d66958`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&units=metric&appid=${key}`)
   .then(response  => response.json())
   .then(data => {
       console.log(data);
