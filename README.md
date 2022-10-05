@@ -1,3 +1,5 @@
 # Weather forecast web application
 
-A weather app built with Javascript with a speech recognition feature
+### Description
+
+This is a weather forecast web application built with HTML5, CSS3 and Javascript.
