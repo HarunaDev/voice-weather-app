@@ -8,6 +8,7 @@ This is a weather forecast web application built with HTML5, CSS3 and Javascript
 
 - Speech Recognition
 - Light mode & Dark mode
+- Progressive Web Application
 
 ### **Contribution Guidelines**
 
