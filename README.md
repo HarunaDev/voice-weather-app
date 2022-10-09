@@ -18,6 +18,7 @@ Your contributions are always welcome here, as long as you follow the guide [HER
 
 - Fork this repository
 - Clone your forked repository
+- cd into the cloned repository
 - Make changes
 - Commit and push
 - Create a pull request
